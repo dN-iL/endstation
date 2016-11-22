@@ -1,0 +1,34 @@
+1479457201.242984,segue,unknown,,ParticipantOverview,,Navigation
+1479457247.209345,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479457247.254763,segue,unknown,,DetailView,current,Navigation
+1479457252.247907,retreat,Shun Long
+1479457252.356357,viewUpdate,Retreat,Shun Long,CEList
+1479457254.389343,segue,unknown,,ParticipantOverview,,Navigation
+1479457262.758533,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479457262.795638,segue,unknown,,DetailView,current,Navigation
+1479457274.863279,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479457292.881816,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479457297.411802,segue,unknown,,DetailView,current,Navigation
+1479457298.298337,segue,DetailView,Simon,History,Simon,Button
+1479457311.146214,segue,unknown,,DetailView,current,Navigation
+1479457320.593131,segue,unknown,,ParticipantOverview,,Navigation
+1479457323.27686,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479457323.309924,segue,unknown,,DetailView,current,Navigation
+1479457358.619871,segue,unknown,,ParticipantOverview,,Navigation
+1479457364.778616,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479457364.816262,segue,unknown,,DetailView,current,Navigation
+1479457366.085978,segue,unknown,,ParticipantOverview,,Navigation
+1479457369.900569,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479457369.956221,segue,unknown,,DetailView,current,Navigation
+1479457383.605428,segue,unknown,,ParticipantOverview,,Navigation
+1479457388.939786,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479457388.990328,segue,unknown,,DetailView,current,Navigation
+1479457404.395591,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479457409.663945,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479457416.897292,segue,MedicalCard,current,DetailView,Shun Long,SmallOverview
+1479457416.937183,segue,unknown,,DetailView,current,Navigation
+1479457420.19862,startScenarioBlock,stdCE-54101
+1479457423.481022,viewUpdate,Critical,Simon,CEList
+1479457427.047235,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479457451.19994,endScenarioBlock,stdCE-54101
+1479457481.569319,segue,unknown,,ParticipantOverview,,Navigation

@@ -1,0 +1,40 @@
+1479197560.685662,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479197560.754319,segue,unknown,,DetailView,current,Navigation
+1479197565.249406,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479197609.071789,segue,unknown,,ParticipantOverview,,Navigation
+1479197616.70922,segue,ParticipantOverview,,MissionOverview,,Navigation
+1479197616.811731,segue,Unknown,,MissionOverview,,Navigation
+1479197621.554567,segue,unknown,,ParticipantOverview,,Navigation
+1479197635.393353,segue,ParticipantOverview,,MissionOverview,,Navigation
+1479197635.424575,segue,Unknown,,MissionOverview,,Navigation
+1479197639.672293,segue,unknown,,ParticipantOverview,,Navigation
+1479197641.040668,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479197641.09153,segue,unknown,,DetailView,current,Navigation
+1479197642.836159,segue,unknown,,ParticipantOverview,,Navigation
+1479197727.10883,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479197727.167512,segue,unknown,,DetailView,current,Navigation
+1479197732.844532,retreat,Shun Long
+1479197732.877497,viewUpdate,Retreat,Shun Long,CEList
+1479197737.935557,segue,unknown,,ParticipantOverview,,Navigation
+1479197745.766057,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479197745.802898,segue,unknown,,DetailView,current,Navigation
+1479197750.560538,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479197783.46425,segue,unknown,,ParticipantOverview,,Navigation
+1479197786.677589,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479197786.734138,segue,unknown,,DetailView,current,Navigation
+1479197794.672582,segue,unknown,,ParticipantOverview,,Navigation
+1479197796.176149,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479197796.233721,segue,unknown,,DetailView,current,Navigation
+1479197797.631996,segue,unknown,,ParticipantOverview,,Navigation
+1479197810.182815,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479197810.234929,segue,unknown,,DetailView,current,Navigation
+1479197843.500908,segue,unknown,,ParticipantOverview,,Navigation
+1479197844.791663,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479197844.828214,segue,unknown,,DetailView,current,Navigation
+1479197848.274792,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479197870.413388,segue,MedicalCard,current,DetailView,Shun Long,SmallOverview
+1479197870.445962,segue,unknown,,DetailView,current,Navigation
+1479197878.71454,startScenarioBlock,stdCE-36966
+1479197881.250782,viewUpdate,Critical,Simon,CEList
+1479197882.748373,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479197904.835195,segue,unknown,,ParticipantOverview,,Navigation

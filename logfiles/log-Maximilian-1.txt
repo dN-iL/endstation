@@ -1,0 +1,30 @@
+1479374706.715261,segue,unknown,,ParticipantOverview,,Navigation
+1479374719.202088,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479374719.279135,segue,unknown,,DetailView,current,Navigation
+1479374724.443242,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479374756.029406,segue,unknown,,ParticipantOverview,,Navigation
+1479374775.722562,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479374775.779331,segue,unknown,,DetailView,current,Navigation
+1479374777.736756,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479374789.8047,segue,unknown,,ParticipantOverview,,Navigation
+1479374838.112235,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479374838.156881,segue,unknown,,DetailView,current,Navigation
+1479374840.926355,retreat,Shun Long
+1479374841.028722,viewUpdate,Retreat,Shun Long,CEList
+1479374843.286651,segue,unknown,,ParticipantOverview,,Navigation
+1479374849.779283,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479374849.831585,segue,unknown,,DetailView,current,Navigation
+1479374851.557797,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479374879.668119,segue,DetailView,Simon,History,Simon,Button
+1479374898.310242,segue,History,current,DetailView,Simon,SmallOverview
+1479374898.337142,segue,unknown,,DetailView,current,Navigation
+1479374902.541945,segue,HumidityGraph,Simon,HumidityGraph,Simon,Button
+1479374916.003634,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479374932.587804,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479374939.323154,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479374944.921653,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479374947.694399,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479374960.28894,startScenarioBlock,stdCE-74878
+1479374962.62414,viewUpdate,Critical,Shun Long,CEList
+1479374964.695541,segue,MedicalCard,current,DetailView,Simon,SmallOverview
+1479374964.730148,segue,unknown,,DetailView,current,Navigation

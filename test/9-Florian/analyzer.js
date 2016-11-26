@@ -119,7 +119,6 @@ var mapper = function(toBeMapped) {
 }
 
 var analyzeComponentTest = function(content) {
-  var logs = content.split('#');
   
   /* WHAT IS RECORDED FOR EACH SCENARIO BLOCK?
     ==========================================
@@ -127,7 +126,7 @@ var analyzeComponentTest = function(content) {
   stdWarning - nichts
   coreTempPeak - person - start - onDetailView - onGraph - retreat
   noConnection - person - start - onDetailView - retreat
-  importantVsUnimportant - unimportanPerson - importantPerson - start - onDetailViewUnimportant - onDetailViewImportant - retreatUnimportant - retreatImportant
+  importantVsUnimportant - unimportantPerson - importantPerson - start - onDetailViewUnimportant - onDetailViewImportant - retreatUnimportant - retreatImportant
   */
 
   /* WHAT IS RECORDED OVERALL
@@ -165,19 +164,20 @@ var analyzeComponentTest = function(content) {
   var lastSegueOn = 0;
 
   // look at each log and fill the scenarioBlockData object accordingly
+  var logs = content.split('#');
   logs.forEach(function(logString) {
     log = logString.split(',');
     var timestamp = log[0];
     switch(log[1]) {
       case 'startScenarioBlock':
         var type = log[2].split('-')[0];
+        // ignore stdWarnnigs
         if(type == 'stdWarning') break;
         var id = log[2].split('-')[1];
-        scenarioBlockData.push({'type': type, 'id': id, 'clicksWhileActive': 0, 'active': true});
+        scenarioBlockData.push({'type': type, 'id': id, 'seguesWhileActive': 0, 'active': true});
         viewUpdateQueue.push(id);
-        // importantVsUnimportant awaits 3 viewUpdates
+        // importantVsUnimportant awaits 2 critical viewUpdates, therefore needs one more
         if(type == 'importantVsUnimportant') {
-          viewUpdateQueue.push(id);
           viewUpdateQueue.push(id);
         }  
         break;
@@ -197,11 +197,11 @@ var analyzeComponentTest = function(content) {
         scenarioBlockData.forEach(function(blockData) {
           if(blockData['active'] == true && blockData['id'] == forId) {
             if(blockData['type'] == 'importantVsUnimportant') {
-              if(blockData.hasOwnProperty('unimportanPerson')) {
+              if(blockData.hasOwnProperty('unimportantPerson')) {
                 blockData['importantPerson'] = forPerson;
               } else {
-                blockData['unimportanPerson'] = forPerson;
                 blockData['start'] = timestamp;
+                blockData['unimportantPerson'] = forPerson;
               }
             } else {
               blockData['person'] = forPerson;
@@ -220,8 +220,8 @@ var analyzeComponentTest = function(content) {
           scenarioBlockData.forEach(function(blockData) {
             if(blockData['type'] == 'importantVsUnimportant') {
               if(!blockData.hasOwnProperty('onDetailViewUnimportant') && 
-                blockData.hasOwnProperty('unimportanPerson') && 
-                blockData['unimportanPerson'] == toPerson) {
+                blockData.hasOwnProperty('unimportantPerson') && 
+                blockData['unimportantPerson'] == toPerson) {
                 blockData['onDetailViewUnimportant'] = timestamp;
               } else if(!blockData.hasOwnProperty('onDetailViewImportant') && 
                 blockData.hasOwnProperty('importantPerson') && 
@@ -247,18 +247,16 @@ var analyzeComponentTest = function(content) {
             });
           }
         } 
-
         // increment segue counters
-
         overallSegues++;
-        // clicksWhileActive counter for every active block
+        // seguesWhileActive counter for every active block
         scenarioBlockData.forEach(function(blockData) {
           if(blockData['active'] == true) {
             if((blockData['type'] == 'importantVsUnimportant' && 
                 !blockData.hasOwnProperty['retreatImportant'] &&
                 !blockData.hasOwnProperty['retreatUnimportant']) ||
               !blockData.hasOwnProperty['retreat']) {
-              blockData['clicksWhileActive'] += 1;
+              blockData['seguesWhileActive'] += 1;
             }
           }
         });
@@ -295,11 +293,17 @@ var analyzeComponentTest = function(content) {
                 !scenarioBlock.hasOwnProperty('retreatImportant')) {
                 scenarioBlock['retreatImportant'] = timestamp;
                 wasRight = true;
+                if(scenarioBlock.hasOwnProperty('retreatUnimportant')) {
+                  scenarioBlock['active'] = false;
+                }
               } else if (scenarioBlock.hasOwnProperty('onDetailViewUnimportant') && 
                 scenarioBlock['unimportantPerson'] == person && 
                 !scenarioBlock.hasOwnProperty('retreatUnimportant')) {
                 scenarioBlock['retreatUnimportant'] = timestamp;
                 wasRight = true;
+                if(scenarioBlock.hasOwnProperty('retreatImportant')) {
+                  scenarioBlock['active'] = false;
+                }
               }
             } else if((scenarioBlock['type'] == 'stdCE' || scenarioBlock['type'] == 'noConnection' || scenarioBlock['type'] == 'coreTempPeak') &&
               scenarioBlock.hasOwnProperty('onDetailView') && 
@@ -307,6 +311,7 @@ var analyzeComponentTest = function(content) {
               !scenarioBlock.hasOwnProperty('retreat')) {
               scenarioBlock['retreat'] = timestamp;
               wasRight = true;
+              scenarioBlock['active'] = false;
             }
           }   
         });
@@ -316,7 +321,22 @@ var analyzeComponentTest = function(content) {
         break;
     }
   });
+  // add overall numbers
   scenarioBlockData.push({'numbers': [rightRetreats, wrongRetreats, clicksOnCEList, clicksOnStatusWidget, clicksOnTableViewCell, changesToAnotherGraph, overallSegues]});
+
+  // remove helper attributes
+  /*
+  scenarioBlockData.forEach(function(scenarioBlock) {
+    delete scenarioBlock['active'];
+    delete scenarioBlock['id'];
+    if(scenarioBlock['type'] == 'importantVsUnimportant') {
+      delete scenarioBlock['importantPerson'];
+      delete scenarioBlock['unimportantPerson'];
+    } else {
+      delete scenarioBlock['person'];
+    }
+  });*/
+
   console.log(scenarioBlockData);
   return scenarioBlockData;
 }

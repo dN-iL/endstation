@@ -1,5 +1,3 @@
-var fs = require('fs');
-var path = require('path');
 var content = "1479301434.16726,startScenarioBlock,stdCE-76696#\
 1479301434.436052,viewUpdate,Critical,SÃ¶nke,CEList#\
 1479301436.811988,segue,ParticipantOverview,current,DetailView,SÃ¶nke,CEList#\

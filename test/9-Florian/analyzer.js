@@ -1,110 +1,3 @@
-var content = "1479301434.16726,startScenarioBlock,stdCE-76696#\
-1479301434.436052,viewUpdate,Critical,SÃ¶nke,CEList#\
-1479301436.811988,segue,ParticipantOverview,current,DetailView,SÃ¶nke,CEList#\
-1479301436.883465,segue,unknown,,DetailView,current,Navigation#\
-1479301440.690075,retreat,SÃ¶nke#\
-1479301440.704783,viewUpdate,Retreat,SÃ¶nke,CEList#\
-1479301443.677289,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301460.16652,startScenarioBlock,stdWarning-57440#\
-1479301460.567484,viewUpdate,Warning,Martin,CEList#\
-1479301463.27318,segue,ParticipantOverview,,DetailView,Martin,OverviewTable#\
-1479301463.315061,segue,unknown,,DetailView,current,Navigation#\
-1479301465.16681,endScenarioBlock,stdCE-76696#\
-1479301472.011855,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301479.665485,segue,ParticipantOverview,,DetailView,Martin,OverviewTable#\
-1479301479.695957,segue,unknown,,DetailView,current,Navigation#\
-1479301483.747699,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301491.16774,endScenarioBlock,stdWarning-57440#\
-1479301496.16912,startScenarioBlock,stdWarning-88925#\
-1479301496.481971,viewUpdate,Warning,Martin,CEList#\
-1479301503.140997,segue,ParticipantOverview,,DetailView,Martin,OverviewTable#\
-1479301503.168036,segue,unknown,,DetailView,current,Navigation#\
-1479301521.803856,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301527.16782,endScenarioBlock,stdWarning-88925#\
-1479301532.16737,startScenarioBlock,stdCE-8063#\
-1479301532.759479,viewUpdate,Critical,Thorben,CEList#\
-1479301535.067803,segue,ParticipantOverview,current,DetailView,Thorben,CEList#\
-1479301535.102867,segue,unknown,,DetailView,current,Navigation#\
-1479301538.002273,segue,HeartRateGraph,Thorben,HumidityGraph,Thorben,Button#\
-1479301543.196862,retreat,Thorben#\
-1479301543.312564,viewUpdate,Retreat,Thorben,CEList#\
-1479301544.780173,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301556.634962,segue,ParticipantOverview,current,DetailView,Martin,CEList#\
-1479301556.665676,segue,unknown,,DetailView,current,Navigation#\
-1479301558.16599,startScenarioBlock,coreTempPeak-41166#\
-1479301558.290824,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301559.24995,viewUpdate,Critical,Johannes,CEList#\
-1479301563.17037,endScenarioBlock,stdCE-8063#\
-1479301571.661559,segue,ParticipantOverview,current,DetailView,Johannes,CEList#\
-1479301571.698733,segue,unknown,,DetailView,current,Navigation#\
-1479301575.218301,segue,HeartRateGraph,Johannes,CoreTempGraph,Johannes,Button#\
-1479301577.656047,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301580.546788,segue,ParticipantOverview,current,DetailView,Johannes,CEList#\
-1479301580.589845,segue,unknown,,DetailView,current,Navigation#\
-1479301582.734959,segue,HeartRateGraph,Johannes,WristTempGraph,Johannes,Button#\
-1479301583.001842,segue,WristTempGraph,Johannes,HumidityGraph,Johannes,Button#\
-1479301584.552209,segue,HumidityGraph,Johannes,CoreTempGraph,Johannes,Button#\
-1479301586.856977,retreat,Johannes#\
-1479301586.932012,viewUpdate,Retreat,Johannes,CEList#\
-1479301587.770141,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301591.16914,endScenarioBlock,coreTempPeak-41166#\
-1479301596.16967,startScenarioBlock,stdWarning-94513#\
-1479301597.914346,viewUpdate,Warning,Martin,CEList#\
-1479301600.07998,segue,ParticipantOverview,current,DetailView,Martin,CEList#\
-1479301600.117132,segue,unknown,,DetailView,current,Navigation#\
-1479301610.515694,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301613.132038,segue,ParticipantOverview,current,DetailView,Martin,CEList#\
-1479301613.174358,segue,unknown,,DetailView,current,Navigation#\
-1479301615.31342,segue,DetailView,current,DetailView,Martin,SmallOverview#\
-1479301615.975749,segue,DetailView,current,DetailView,Martin,SmallOverview#\
-1479301617.14677,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301621.857209,segue,ParticipantOverview,,DetailView,Martin,OverviewTable#\
-1479301621.89805,segue,unknown,,DetailView,current,Navigation#\
-1479301625.14007,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301627.17056,endScenarioBlock,stdWarning-94513#\
-1479301632.1745,startScenarioBlock,importantVsUnimportant-71507#\
-1479301632.546207,viewUpdate,Critical,Johannes,CEList#\
-1479301633.970351,viewUpdate,Warning,Johannes,CEList#\
-1479301635.796016,segue,ParticipantOverview,current,DetailView,Johannes,CEList#\
-1479301635.822173,segue,unknown,,DetailView,current,Navigation#\
-1479301637.628137,viewUpdate,Critical,Andreas,CEList#\
-1479301638.145104,segue,HeartRateGraph,Johannes,HumidityGraph,Johannes,Button#\
-1479301640.197355,retreat,Johannes#\
-1479301640.632847,viewUpdate,Retreat,Johannes,CEList#\
-1479301641.782402,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301643.722393,segue,ParticipantOverview,current,DetailView,Johannes,CEList#\
-1479301643.754399,segue,unknown,,DetailView,current,Navigation#\
-1479301646.087042,segue,HeartRateGraph,Johannes,WristTempGraph,Johannes,Button#\
-1479301654.732357,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301667.17049,endScenarioBlock,importantVsUnimportant-71507#\
-1479301672.17318,startScenarioBlock,stdWarning-7352#\
-1479301672.823992,viewUpdate,Warning,Lorenzo,CEList#\
-1479301674.732295,segue,ParticipantOverview,current,DetailView,Lorenzo,CEList#\
-1479301674.768565,segue,unknown,,DetailView,current,Navigation#\
-1479301683.065806,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301703.17893,endScenarioBlock,stdWarning-7352#\
-1479301708.17571,startScenarioBlock,noConnection-42485#\
-1479301708.532707,viewUpdate,Critical,Lorenzo,CEList#\
-1479301708.575021,viewUpdate,Critical,Lorenzo,CEList#\
-1479301708.617667,viewUpdate,Critical,Lorenzo,CEList#\
-1479301708.651737,viewUpdate,Critical,Lorenzo,CEList#\
-1479301708.694052,viewUpdate,Critical,Lorenzo,CEList#\
-1479301711.033557,segue,ParticipantOverview,current,DetailView,Lorenzo,CEList#\
-1479301711.064713,segue,unknown,,DetailView,current,Navigation#\
-1479301713.77676,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301717.051496,segue,ParticipantOverview,,DetailView,Lorenzo,OverviewTable#\
-1479301717.08362,segue,unknown,,DetailView,current,Navigation#\
-1479301720.369294,retreat,Lorenzo#\
-1479301720.450088,viewUpdate,Retreat,Lorenzo,CEList#\
-1479301725.504476,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301727.434864,segue,ParticipantOverview,,DetailView,Lorenzo,OverviewTable#\
-1479301727.465281,segue,unknown,,DetailView,current,Navigation#\
-1479301729.512743,segue,unknown,,ParticipantOverview,,Navigation#\
-1479301739.17245,endScenarioBlock,noConnection-42485#\
-1479301738.13509,segue,ParticipantOverview,current,DetailView,Lorenzo,CEList#\
-1479301738.168174,segue,unknown,,DetailView,current,Navigation#\
-1479301740.372233,segue,unknown,,ParticipantOverview,,Navigation"
-
 var mapper = function(toBeMapped) {
   switch(toBeMapped) {
     case 'Warning':
@@ -116,21 +9,109 @@ var mapper = function(toBeMapped) {
   }
 }
 
-var analyzeComponentTest = function(content) {
-  
-  /* WHAT IS RECORDED FOR EACH SCENARIO BLOCK?
-    ==========================================
-  stdCE - id - person - start - onDetailView - retreat
+var addIfNotThere = function(e, array) {
+  var alreadyThere = false;
+  array.forEach(function(element) {
+    if(element == e) {
+      alreadyThere = true;
+    }
+  });
+  if(!alreadyThere) {
+    array.push(e);
+  }
+}
+
+var arrayContaintsElement = function(e, array) {
+  var contains = false;
+  array.forEach( function(element) {
+    if(element == e) {
+      contains = true;
+    }
+  });
+  return contains;
+}
+
+var getElementByAttribute = function(value, attr, arr) {
+  var target;
+  arr.forEach(function(element) {
+    if(element[attr] == value) {
+      target = element;
+      return;
+    }
+  });
+  return target;
+}
+
+var removeFromArray = function(e, array) {
+  var index = array.indexOf(e);
+  if (index > -1) {
+    array.splice(index, 1);
+  }
+}
+
+var beautifyTimestamps = function(scenarioBlockData) {
+  scenarioBlockData.forEach(function(scenarioBlock) {
+    if(scenarioBlock.hasOwnProperty('type')) {
+      var start = parseFloat(scenarioBlock['start']).toFixed(3);
+      switch (scenarioBlock['type']) {
+        case 'stdCE':
+        case 'noConnection':
+          scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);
+          scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          break;
+        case 'coreTempPeak':
+          scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);
+          scenarioBlock['onGraph'] = (parseFloat(scenarioBlock['onGraph']) - start).toFixed(3);
+          scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          break;
+        case 'importantVsUnimportant':
+          scenarioBlock['onDetailViewUnimportant'] = (parseFloat(scenarioBlock['onDetailViewUnimportant']) - start).toFixed(3);
+          scenarioBlock['onDetailViewImportant'] = (parseFloat(scenarioBlock['onDetailViewImportant']) - start).toFixed(3);
+          scenarioBlock['retreatUnimportant'] = (parseFloat(scenarioBlock['retreatUnimportant']) - start).toFixed(3);
+          scenarioBlock['retreatImportant'] = (parseFloat(scenarioBlock['retreatImportant']) - start).toFixed(3);
+          break;
+        default:
+          break;
+      }
+      scenarioBlock['start'] = start;
+    }
+  });
+}
+
+var removeInvalidCEs = function(scenarioBlockData) {
+  var toBeRemoved = [];
+  scenarioBlockData.forEach(function(scenarioBlock) {
+    if(scenarioBlock['type'] == 'stdCE' && !scenarioBlock.hasOwnProperty('person')) {
+      toBeRemoved.push(scenarioBlock);
+    }
+  });
+  toBeRemoved.forEach(function(scenarioBlock) {
+    removeFromArray(scenarioBlock, scenarioBlockData);
+  });
+  return scenarioBlockData;
+}
+
+var analyzeScenarioBlocks = function(data) {
+  if(data == "") {
+    console.log("No data to analyze!");
+    return;
+  }
+
+  /* RECORDED DATA FOR EACH SCENARIO BLOCK
+    ======================================
+  stdCE - (id) - seguesWhileActive - (person) - start - onDetailView - retreat
   stdWarning - nichts
-  coreTempPeak - person - start - onDetailView - onGraph - retreat
-  noConnection - person - start - onDetailView - retreat
-  importantVsUnimportant - unimportantPerson - importantPerson - start - onDetailViewUnimportant - onDetailViewImportant - retreatUnimportant - retreatImportant
+  coreTempPeak - (id) - seguesWhileActive - (person) - start - onDetailView - onGraph - retreat
+  noConnection - (id) - seguesWhileActive - (person) - start - onDetailView - retreat
+  importantVsUnimportant - (id) - seguesWhileActive - (unimportantPerson) - (importantPerson) - start - 
+    onDetailViewUnimportant - onDetailViewImportant - retreatUnimportant - retreatImportant
   */
 
-  /* WHAT IS RECORDED OVERALL
-    =========================
+  /* RECORDED OVERALL DATA
+    ======================
   # wrong retreats
   # right retreats
+  # retreats of already retreated persons
   # clicks while task open
   # clicks on ce list
   # clicks on status widget
@@ -140,12 +121,12 @@ var analyzeComponentTest = function(content) {
   # clicks on medical card
   */
 
-  // array that is returned with the data of the component test
-  // each scenario block is appended to the array as an object containing its data
+  /* RETURN OBJECT */
   var scenarioBlockData = [];
 
-  // overall measurements
+  /* OVERALL MEASUREMENTS */
   var wrongRetreats = 0;
+  var duplicateRetreats = 0;
   var rightRetreats = 0;
   var clicksWhileTaskOpen = 0;
   var clicksOnCEList = 0;
@@ -155,18 +136,23 @@ var analyzeComponentTest = function(content) {
   var clicksOnHistoryButton = 0;
   var clicksOnMedicalCard = 0;
   var overallSegues = 0;
+  var skippedScenarioBlocks = [];
 
+  /* HELPERS */
+  var retreatedPersons = [];
+  var toBeRetreatedPersons = [];
   // helper for assigning view updates to scenario blocks
   var viewUpdateQueue = [];
   // helper for identifying duplicate segues
   var lastSegueOn = 0;
 
   // look at each log and fill the scenarioBlockData object accordingly
-  var logs = content.split('#');
+  var logs = data.split('#');
   logs.forEach(function(logString) {
     log = logString.split(',');
     var timestamp = log[0];
     switch(log[1]) {
+
       case 'startScenarioBlock':
         var type = log[2].split('-')[0];
         // ignore stdWarnnigs
@@ -174,40 +160,58 @@ var analyzeComponentTest = function(content) {
         var id = log[2].split('-')[1];
         scenarioBlockData.push({'type': type, 'id': id, 'seguesWhileActive': 0, 'active': true});
         viewUpdateQueue.push(id);
-        // importantVsUnimportant awaits 2 critical viewUpdates, therefore needs one more
+        // importantVsUnimportant awaits 2 critical viewUpdates, therefore needs one more in the queue
         if(type == 'importantVsUnimportant') {
           viewUpdateQueue.push(id);
         }  
         break;
+
       case 'endScenarioBlock':
         var id = log[2].split('-')[1];
-        scenarioBlockData.forEach(function(blockData) {
-          if(blockData['id'] == id) {
-            blockData['active'] = false;
+        var forBlock = getElementByAttribute(id, 'id', scenarioBlockData);
+        if(forBlock != undefined) { // scenario block might already be deleted
+          forBlock['active'] = false;
+          if(forBlock['type'] == 'importantVsUnimportant') {
+            removeFromArray(forBlock['importantPerson'], toBeRetreatedPersons);
+            removeFromArray(forBlock['unimportantPerson'], toBeRetreatedPersons);
+          } else {
+            removeFromArray(forBlock['person'], toBeRetreatedPersons);
           }
-        });
+        }
         break;
+
       case 'viewUpdate':
         var forEvent = log[2];
-        if (forEvent == 'Retreat' || forEvent == 'Warning') break;
-        var forPerson = log[3];
+        if (forEvent == 'Retreat' || forEvent == 'Warning') break; // => forEvent == 'stdCE'
         var forId = viewUpdateQueue.shift();
-        scenarioBlockData.forEach(function(blockData) {
-          if(blockData['active'] == true && blockData['id'] == forId) {
-            if(blockData['type'] == 'importantVsUnimportant') {
-              if(blockData.hasOwnProperty('unimportantPerson')) {
-                blockData['importantPerson'] = forPerson;
+        var forBlock = getElementByAttribute(forId, 'id', scenarioBlockData);
+        var forPerson = log[3];
+        var isAlreadyRetreated = arrayContaintsElement(forPerson, retreatedPersons);
+        if(!isAlreadyRetreated) {
+          if(forBlock == undefined || forBlock['type'] != 'coreTempPeak') {
+            addIfNotThere(forPerson, toBeRetreatedPersons);
+          }
+          if(forBlock != undefined) {
+            if(forBlock['type'] == 'importantVsUnimportant') {
+              if(forBlock.hasOwnProperty('unimportantPerson')) {
+                forBlock['importantPerson'] = forPerson;
               } else {
-                blockData['start'] = timestamp;
-                blockData['unimportantPerson'] = forPerson;
+                forBlock['start'] = timestamp;
+                forBlock['unimportantPerson'] = forPerson;
               }
             } else {
-              blockData['person'] = forPerson;
-              blockData['start'] = timestamp;
+              forBlock['person'] = forPerson;
+              forBlock['start'] = timestamp;
             }
           }
-        });
+        /* if the event belongs to a person that is already retreated and the event
+         is not deleted yet (therefore not undefined), delete it */
+        } else if (forBlock != undefined) {
+          skippedScenarioBlocks.push(forBlock['type']);
+          removeFromArray(forBlock, scenarioBlockData);
+        }
         break;
+
       case 'segue':
         //ignore duplicate segues
         if(parseFloat(timestamp) - parseFloat(lastSegueOn) < 0.15) break;
@@ -280,9 +284,12 @@ var analyzeComponentTest = function(content) {
         }
         lastSegueOn = timestamp;
         break;
+
       case 'retreat':
         var person = log[2];
-        var wasRight = false;
+        var wasRight = arrayContaintsElement(person, toBeRetreatedPersons);
+        wasRight ? rightRetreats++ : wrongRetreats++;
+        arrayContaintsElement(person, retreatedPersons) ? duplicateRetreats++ : retreatedPersons.push(person);
         scenarioBlockData.forEach(function(scenarioBlock) {
           if(scenarioBlock['active'] == true) {
             if(scenarioBlock['type'] == 'importantVsUnimportant') {
@@ -290,7 +297,6 @@ var analyzeComponentTest = function(content) {
                 scenarioBlock['importantPerson'] == person && 
                 !scenarioBlock.hasOwnProperty('retreatImportant')) {
                 scenarioBlock['retreatImportant'] = timestamp;
-                wasRight = true;
                 if(scenarioBlock.hasOwnProperty('retreatUnimportant')) {
                   scenarioBlock['active'] = false;
                 }
@@ -298,7 +304,6 @@ var analyzeComponentTest = function(content) {
                 scenarioBlock['unimportantPerson'] == person && 
                 !scenarioBlock.hasOwnProperty('retreatUnimportant')) {
                 scenarioBlock['retreatUnimportant'] = timestamp;
-                wasRight = true;
                 if(scenarioBlock.hasOwnProperty('retreatImportant')) {
                   scenarioBlock['active'] = false;
                 }
@@ -308,20 +313,24 @@ var analyzeComponentTest = function(content) {
               scenarioBlock['person'] == person &&
               !scenarioBlock.hasOwnProperty('retreat')) {
               scenarioBlock['retreat'] = timestamp;
-              wasRight = true;
               scenarioBlock['active'] = false;
             }
           }   
         });
-        wasRight ? rightRetreats++ : wrongRetreats++;
+        removeFromArray(person, toBeRetreatedPersons);
+        addIfNotThere(person, retreatedPersons);
         break;
+
       default:
         break;
     }
   });
-  // add overall numbers
-  scenarioBlockData.push({'numbers': [rightRetreats, wrongRetreats, clicksOnCEList, clicksOnStatusWidget, clicksOnTableViewCell, changesToAnotherGraph, overallSegues]});
-
+  // add overall numbers and skipped scenario blocks
+  scenarioBlockData.push({'retreats': [rightRetreats, wrongRetreats, duplicateRetreats]});
+  scenarioBlockData.push({'clicks': [clicksOnTableViewCell, clicksOnCEList, clicksOnStatusWidget, changesToAnotherGraph, overallSegues]});
+  scenarioBlockData.push({'skipped': skippedScenarioBlocks});
+  // last man standing in speed test produces invalid CE
+  scenarioBlockData = removeInvalidCEs(scenarioBlockData);
   // remove helper attributes
   /*
   scenarioBlockData.forEach(function(scenarioBlock) {
@@ -334,9 +343,9 @@ var analyzeComponentTest = function(content) {
       delete scenarioBlock['person'];
     }
   });*/
-
+  //beautifyTimestamps(scenarioBlockData);
   console.log(scenarioBlockData);
   return scenarioBlockData;
 }
 
-analyzeComponentTest(content);
+module.exports analyzeScenarioBlocks;

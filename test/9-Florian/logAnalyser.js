@@ -56,19 +56,37 @@ var beautifyTimestamps = function(scenarioBlockData) {
       switch (scenarioBlock['type']) {
         case 'stdCE':
         case 'noConnection':
-          scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);
-          scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          if(scenarioBlock.hasOwnProperty('onDetailView')) {
+            scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);  
+          }
+          if(scenarioBlock.hasOwnProperty('retreat')) {
+            scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          }
           break;
         case 'coreTempPeak':
-          scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);
-          scenarioBlock['onGraph'] = (parseFloat(scenarioBlock['onGraph']) - start).toFixed(3);
-          scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          if(scenarioBlock.hasOwnProperty('onDetailView')) {
+            scenarioBlock['onDetailView'] = (parseFloat(scenarioBlock['onDetailView']) - start).toFixed(3);  
+          }
+          if(scenarioBlock.hasOwnProperty('onGraph')) {
+            scenarioBlock['onGraph'] = (parseFloat(scenarioBlock['onGraph']) - start).toFixed(3);
+          }
+          if(scenarioBlock.hasOwnProperty('retreat')) {
+            scenarioBlock['retreat'] = (parseFloat(scenarioBlock['retreat']) - start).toFixed(3);
+          }
           break;
         case 'importantVsUnimportant':
-          scenarioBlock['onDetailViewUnimportant'] = (parseFloat(scenarioBlock['onDetailViewUnimportant']) - start).toFixed(3);
-          scenarioBlock['onDetailViewImportant'] = (parseFloat(scenarioBlock['onDetailViewImportant']) - start).toFixed(3);
-          scenarioBlock['retreatUnimportant'] = (parseFloat(scenarioBlock['retreatUnimportant']) - start).toFixed(3);
-          scenarioBlock['retreatImportant'] = (parseFloat(scenarioBlock['retreatImportant']) - start).toFixed(3);
+          if(scenarioBlock.hasOwnProperty('onDetailViewUnimportant')) {
+            scenarioBlock['onDetailViewUnimportant'] = (parseFloat(scenarioBlock['onDetailViewUnimportant']) - start).toFixed(3);  
+          }
+          if(scenarioBlock.hasOwnProperty('onDetailViewImportant')) {
+            scenarioBlock['onDetailViewImportant'] = (parseFloat(scenarioBlock['onDetailViewImportant']) - start).toFixed(3);  
+          }
+          if(scenarioBlock.hasOwnProperty('retreatUnimportant')) {
+            scenarioBlock['retreatUnimportant'] = (parseFloat(scenarioBlock['retreatUnimportant']) - start).toFixed(3);  
+          }
+          if(scenarioBlock.hasOwnProperty('retreatImportant')) {
+            scenarioBlock['retreatImportant'] = (parseFloat(scenarioBlock['retreatImportant']) - start).toFixed(3);  
+          }
           break;
         default:
           break;
@@ -88,7 +106,19 @@ var removeInvalidCEs = function(scenarioBlockData) {
   toBeRemoved.forEach(function(scenarioBlock) {
     removeFromArray(scenarioBlock, scenarioBlockData);
   });
-  return scenarioBlockData;
+}
+
+var removeHelperAttributes = function(scenarioBlockData) {
+  scenarioBlockData.forEach(function(scenarioBlock) {
+    delete scenarioBlock['active'];
+    delete scenarioBlock['id'];
+    if(scenarioBlock['type'] == 'importantVsUnimportant') {
+      delete scenarioBlock['importantPerson'];
+      delete scenarioBlock['unimportantPerson'];
+    } else {
+      delete scenarioBlock['person'];
+    }
+  });
 }
 
 var analyzeScenarioBlocks = function(data) {
@@ -105,20 +135,6 @@ var analyzeScenarioBlocks = function(data) {
   noConnection - (id) - seguesWhileActive - (person) - start - onDetailView - retreat
   importantVsUnimportant - (id) - seguesWhileActive - (unimportantPerson) - (importantPerson) - start - 
     onDetailViewUnimportant - onDetailViewImportant - retreatUnimportant - retreatImportant
-  */
-
-  /* RECORDED OVERALL DATA
-    ======================
-  # wrong retreats
-  # right retreats
-  # retreats of already retreated persons
-  # clicks while task open
-  # clicks on ce list
-  # clicks on status widget
-  # clicks on tableview cell
-  # changes to another graph
-  # clicks on history button
-  # clicks on medical card
   */
 
   /* RETURN OBJECT */
@@ -330,21 +346,10 @@ var analyzeScenarioBlocks = function(data) {
   scenarioBlockData.push({'clicks': [clicksOnTableViewCell, clicksOnCEList, clicksOnStatusWidget, changesToAnotherGraph, overallSegues]});
   scenarioBlockData.push({'skipped': skippedScenarioBlocks});
   // last man standing in speed test produces invalid CE
-  scenarioBlockData = removeInvalidCEs(scenarioBlockData);
-  // remove helper attributes
-  /*
-  scenarioBlockData.forEach(function(scenarioBlock) {
-    delete scenarioBlock['active'];
-    delete scenarioBlock['id'];
-    if(scenarioBlock['type'] == 'importantVsUnimportant') {
-      delete scenarioBlock['importantPerson'];
-      delete scenarioBlock['unimportantPerson'];
-    } else {
-      delete scenarioBlock['person'];
-    }
-  });*/
-  //beautifyTimestamps(scenarioBlockData);
-  console.log(scenarioBlockData);
+  removeInvalidCEs(scenarioBlockData);
+  removeHelperAttributes(scenarioBlockData);
+  beautifyTimestamps(scenarioBlockData);
+  //console.log(scenarioBlockData);
   return scenarioBlockData;
 }
 

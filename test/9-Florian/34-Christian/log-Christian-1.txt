@@ -1,0 +1,35 @@
+1479462520.319706,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479462541.045064,segue,unknown,,ParticipantOverview,,Navigation
+1479462558.645434,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479462558.690677,segue,unknown,,DetailView,current,Navigation
+1479462564.862856,segue,HeartRateGraph,Shun Long,AnkleTempGraph,Shun Long,Button
+1479462571.494739,segue,AnkleTempGraph,Shun Long,WristTempGraph,Shun Long,Button
+1479462572.247161,segue,WristTempGraph,Shun Long,AnkleTempGraph,Shun Long,Button
+1479462574.271577,segue,AnkleTempGraph,Shun Long,HumidityGraph,Shun Long,Button
+1479462579.290808,segue,unknown,,ParticipantOverview,,Navigation
+1479462614.091811,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479462614.130019,segue,unknown,,DetailView,current,Navigation
+1479462618.87777,retreat,Shun Long
+1479462618.899695,viewUpdate,Retreat,Shun Long,CEList
+1479462620.682627,segue,unknown,,ParticipantOverview,,Navigation
+1479462628.644801,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479462628.692507,segue,unknown,,DetailView,current,Navigation
+1479462630.941286,segue,DetailView,Simon,History,Simon,Button
+1479462647.107042,segue,unknown,,DetailView,current,Navigation
+1479462647.957935,segue,unknown,,ParticipantOverview,,Navigation
+1479462649.46026,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479462649.505334,segue,unknown,,DetailView,current,Navigation
+1479462668.639195,segue,unknown,,ParticipantOverview,,Navigation
+1479462687.736236,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479462687.777913,segue,unknown,,DetailView,current,Navigation
+1479462717.3036,segue,DetailView,Daniel,MedicalCard,Daniel,Button
+1479462727.574978,segue,unknown,,DetailView,current,Navigation
+1479462729.142335,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479462733.32256,startScenarioBlock,stdCE-70218
+1479462735.919894,viewUpdate,Critical,Shun Long,CEList
+1479462740.265163,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479462746.230453,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479462754.027103,segue,DetailView,Simon,History,Simon,Button
+1479462761.544474,segue,unknown,,DetailView,current,Navigation
+1479462762.106981,segue,unknown,,ParticipantOverview,,Navigation
+1479462764.32355,endScenarioBlock,stdCE-70218

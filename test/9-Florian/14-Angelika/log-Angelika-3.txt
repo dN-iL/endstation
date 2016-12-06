@@ -1,0 +1,17 @@
+1479210016.92098,startScenarioBlock,stdCE-65505
+1479210019.560709,viewUpdate,Critical,Andreas,CEList
+1479210030.413759,segue,ParticipantOverview,,DetailView,Andreas,OverviewTable
+1479210030.49624,segue,unknown,,DetailView,current,Navigation
+1479210036.92195,startScenarioBlock,stdCE-783
+1479210039.567006,viewUpdate,Critical,SÃ¶nke,CEList
+1479210043.335074,retreat,Andreas
+1479210043.352916,viewUpdate,Retreat,Andreas,CEList
+1479210045.713085,segue,unknown,,ParticipantOverview,,Navigation
+1479210047.92226,endScenarioBlock,stdCE-65505
+1479210051.92274,startScenarioBlock,stdCE-52057
+1479210054.511885,viewUpdate,Critical,Thorben,CEList
+1479210061.92342,startScenarioBlock,stdCE-89028
+1479210064.565078,viewUpdate,Critical,Martin,CEList
+1479210067.92382,endScenarioBlock,stdCE-783
+1479210082.92376,endScenarioBlock,stdCE-52057
+1479210092.92371,endScenarioBlock,stdCE-89028

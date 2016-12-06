@@ -1,0 +1,24 @@
+1479121919.63999,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479121919.713793,segue,unknown,,DetailView,current,Navigation
+1479121925.849686,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479121941.169475,segue,unknown,,ParticipantOverview,,Navigation
+1479122026.967737,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479122027.013602,segue,unknown,,DetailView,current,Navigation
+1479122036.131806,retreat,Shun Long
+1479122036.174812,viewUpdate,Retreat,Shun Long,CEList
+1479122047.976675,segue,unknown,,ParticipantOverview,,Navigation
+1479122054.111936,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479122054.161298,segue,unknown,,DetailView,current,Navigation
+1479122085.71778,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479122114.305904,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479122173.342728,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479122175.961905,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479122210.551675,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479122222.8836,segue,DetailView,Daniel,MedicalCard,Daniel,Button
+1479122241.522116,segue,MedicalCard,current,DetailView,Shun Long,SmallOverview
+1479122241.560775,segue,unknown,,DetailView,current,Navigation
+1479122251.00418,startScenarioBlock,stdCE-95996
+1479122252.549831,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479122253.052621,viewUpdate,Critical,Shun Long,CEList
+1479122255.794531,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479122281.199417,segue,unknown,,ParticipantOverview,,Navigation

@@ -1,0 +1,36 @@
+1479209059.715267,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479209059.781738,segue,unknown,,DetailView,current,Navigation
+1479209069.872249,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479209084.188824,segue,unknown,,ParticipantOverview,,Navigation
+1479209142.955977,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479209143.00384,segue,unknown,,DetailView,current,Navigation
+1479209163.844055,segue,unknown,,ParticipantOverview,,Navigation
+1479209192.851863,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479209192.904802,segue,unknown,,DetailView,current,Navigation
+1479209201.150249,retreat,Shun Long
+1479209201.17634,viewUpdate,Retreat,Shun Long,CEList
+1479209205.693037,segue,unknown,,ParticipantOverview,,Navigation
+1479209219.830316,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479209219.87627,segue,unknown,,DetailView,current,Navigation
+1479209223.434989,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479209246.836065,segue,DetailView,Simon,History,Simon,Button
+1479209335.661592,segue,unknown,,DetailView,current,Navigation
+1479209336.943327,segue,unknown,,ParticipantOverview,,Navigation
+1479209341.806916,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479209341.867107,segue,unknown,,DetailView,current,Navigation
+1479209355.313983,segue,unknown,,ParticipantOverview,,Navigation
+1479209357.020418,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479209357.076988,segue,unknown,,DetailView,current,Navigation
+1479209427.823033,segue,unknown,,ParticipantOverview,,Navigation
+1479209434.509089,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479209434.561121,segue,unknown,,DetailView,current,Navigation
+1479209485.324296,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479209488.791639,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479209500.788005,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479209517.635733,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479209530.737488,segue,unknown,,DetailView,current,Navigation
+1479209534.584181,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479209540.35318,startScenarioBlock,stdCE-59646
+1479209542.950953,viewUpdate,Critical,Shun Long,CEList
+1479209556.439138,segue,unknown,,ParticipantOverview,,Navigation
+1479209571.35371,endScenarioBlock,stdCE-59646

@@ -106,7 +106,7 @@ var transformOneTestToCsvJson = function(testName, personNumber, personSummary) 
       var rightRetreats = testRetreats[0];
       var wrongRetreats = testRetreats[1];
       var duplicateRetreats = testRetreats[2];
-      forCsv.push({'person': person, 'test': testName, 'rightRetreats': rightRetreats, 'wrongRetreats': wrongRetreats, 'duplicateRetreats': duplicateRetreats});
+      forCsv.push({'person': person, 'test': testName, 'type': 'retreatCounts', 'rightRetreats': rightRetreats, 'wrongRetreats': wrongRetreats, 'duplicateRetreats': duplicateRetreats});
     } else if(i==boundary+1) {
       var testClicks = test[i]['clicks'];
       var clicksOnTableView = testClicks[0];
@@ -114,7 +114,7 @@ var transformOneTestToCsvJson = function(testName, personNumber, personSummary) 
       var clicksOnStatusWidget = testClicks[2];
       var clicksOnAnotherGraph = testClicks[3];
       var clicksOverall = testClicks[4];
-      forCsv.push({'person': person, 'test': testName, 'clicksOnTableView': clicksOnTableView, 'clicksOnCeList': clicksOnCeList, 'clicksOnStatusWidget': clicksOnStatusWidget, 'clicksOnAnotherGraph': clicksOnAnotherGraph, 'clicksOverall': clicksOverall});
+      forCsv.push({'person': person, 'test': testName, 'type': 'segueCounts', 'clicksOnTableView': clicksOnTableView, 'clicksOnCeList': clicksOnCeList, 'clicksOnStatusWidget': clicksOnStatusWidget, 'clicksOnAnotherGraph': clicksOnAnotherGraph, 'clicksOverall': clicksOverall});
     }
     // to do: handle skipped!
   }
@@ -137,7 +137,7 @@ var transformToCsvJson = function() {
       csv.push(scenarioBlockData);
     });
   })
-  console.log(JSON.stringify(csv));
+  return csv;
 }
 
-transformToCsvJson();
+module.exports = transformToCsvJson();

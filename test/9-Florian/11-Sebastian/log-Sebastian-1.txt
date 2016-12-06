@@ -1,0 +1,37 @@
+1479200447.812343,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479200447.888517,segue,unknown,,DetailView,current,Navigation
+1479200450.012367,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479200497.015541,segue,unknown,,ParticipantOverview,,Navigation
+1479200601.558311,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479200601.611264,segue,unknown,,DetailView,current,Navigation
+1479200609.158466,retreat,Shun Long
+1479200609.169864,viewUpdate,Retreat,Shun Long,CEList
+1479200612.22986,segue,unknown,,ParticipantOverview,,Navigation
+1479200622.06652,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479200622.101813,segue,unknown,,DetailView,current,Navigation
+1479200632.447555,segue,DetailView,Simon,History,Simon,Button
+1479200716.624053,segue,unknown,,DetailView,current,Navigation
+1479200766.580385,segue,unknown,,ParticipantOverview,,Navigation
+1479200769.410507,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479200769.470048,segue,unknown,,DetailView,current,Navigation
+1479200796.568702,segue,unknown,,ParticipantOverview,,Navigation
+1479200798.164421,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479200798.217147,segue,unknown,,DetailView,current,Navigation
+1479200806.101926,segue,unknown,,ParticipantOverview,,Navigation
+1479200808.314983,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479200808.358018,segue,unknown,,DetailView,current,Navigation
+1479200817.080904,segue,DetailView,Daniel,MedicalCard,Daniel,Button
+1479200826.634746,segue,unknown,,DetailView,current,Navigation
+1479200827.829326,segue,unknown,,ParticipantOverview,,Navigation
+1479200829.183565,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479200829.237365,segue,unknown,,DetailView,current,Navigation
+1479200830.909962,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479200837.87293,startScenarioBlock,stdCE-33165
+1479200840.269687,viewUpdate,Critical,Shun Long,CEList
+1479200844.881018,segue,MedicalCard,current,DetailView,Shun Long,SmallOverview
+1479200844.921152,segue,unknown,,DetailView,current,Navigation
+1479200851.330906,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479200852.722166,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479200856.706729,segue,DetailView,Simon,History,Simon,Button
+1479200868.87325,endScenarioBlock,stdCE-33165
+1479200888.818842,segue,unknown,,ParticipantOverview,,Navigation

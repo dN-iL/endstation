@@ -236,20 +236,22 @@ var analyzeScenarioBlocks = function(data) {
         // check if this is a reaction to a cricital event
         if(log[4] == 'DetailView') {
           scenarioBlockData.forEach(function(blockData) {
-            if(blockData['type'] == 'importantVsUnimportant') {
-              if(!blockData.hasOwnProperty('onDetailViewUnimportant') && 
-                blockData.hasOwnProperty('unimportantPerson') && 
-                blockData['unimportantPerson'] == toPerson) {
-                blockData['onDetailViewUnimportant'] = timestamp;
-              } else if(!blockData.hasOwnProperty('onDetailViewImportant') && 
-                blockData.hasOwnProperty('importantPerson') && 
-                blockData['importantPerson'] == toPerson) {
-                blockData['onDetailViewImportant'] = timestamp;
+            if(blockData['active'] == true) {
+              if(blockData['type'] == 'importantVsUnimportant') {
+                if(!blockData.hasOwnProperty('onDetailViewUnimportant') && 
+                  blockData.hasOwnProperty('unimportantPerson') && 
+                  blockData['unimportantPerson'] == toPerson) {
+                  blockData['onDetailViewUnimportant'] = timestamp;
+                } else if(!blockData.hasOwnProperty('onDetailViewImportant') && 
+                  blockData.hasOwnProperty('importantPerson') && 
+                  blockData['importantPerson'] == toPerson) {
+                  blockData['onDetailViewImportant'] = timestamp;
+                }
+              } else if(blockData.hasOwnProperty('person') &&
+                blockData['person'] == toPerson &&
+                !blockData.hasOwnProperty('onDetailView')) {
+                blockData['onDetailView'] = timestamp;
               }
-            } else if(blockData.hasOwnProperty('person') &&
-              blockData['person'] == toPerson &&
-              !blockData.hasOwnProperty('onDetailView')) {
-              blockData['onDetailView'] = timestamp;
             }
           });
         } else if(/Graph$/.test(log[4])) {

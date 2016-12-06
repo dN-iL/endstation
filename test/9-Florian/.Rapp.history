@@ -1,0 +1,4 @@
+getwd()
+setwd("dev-uni/endstation/test/9-Florian")
+source("evaluator.R")
+data

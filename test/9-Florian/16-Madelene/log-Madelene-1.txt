@@ -1,0 +1,41 @@
+1479213090.256466,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479213090.30379,segue,unknown,,DetailView,current,Navigation
+1479213092.248158,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479213118.595119,segue,unknown,,ParticipantOverview,,Navigation
+1479213169.329622,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479213169.368218,segue,unknown,,DetailView,current,Navigation
+1479213172.382428,retreat,Shun Long
+1479213172.392842,viewUpdate,Retreat,Shun Long,CEList
+1479213176.790491,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479213177.549364,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479213182.627908,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479213183.819283,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479213184.80194,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479213185.182857,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479213192.310105,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479213194.479924,segue,unknown,,ParticipantOverview,,Navigation
+1479213206.70016,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479213206.750186,segue,unknown,,DetailView,current,Navigation
+1479213213.662559,segue,HeartRateGraph,Daniel,HumidityGraph,Daniel,Button
+1479213221.809002,segue,DetailView,Daniel,History,Daniel,Button
+1479213228.087997,segue,unknown,,DetailView,current,Navigation
+1479213237.809023,segue,unknown,,ParticipantOverview,,Navigation
+1479213239.648876,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479213239.68656,segue,unknown,,DetailView,current,Navigation
+1479213271.640071,segue,HeartRateGraph,Simon,StressLevelGraph,Simon,Button
+1479213272.050789,segue,StressLevelGraph,Simon,CoreTempGraph,Simon,Button
+1479213273.00615,segue,CoreTempGraph,Simon,AnkleTempGraph,Simon,Button
+1479213273.465701,segue,AnkleTempGraph,Simon,WristTempGraph,Simon,Button
+1479213274.440164,segue,WristTempGraph,Simon,HumidityGraph,Simon,Button
+1479213277.057561,segue,HumidityGraph,Simon,HeartRateGraph,Simon,Button
+1479213281.617154,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479213298.651601,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479213315.984264,segue,DetailView,current,DetailView,Daniel,SmallOverview
+1479213321.476391,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479213323.902896,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479213331.934654,segue,unknown,,DetailView,current,Navigation
+1479213339.282555,segue,DetailView,current,DetailView,Shun Long,SmallOverview
+1479213338.52944,startScenarioBlock,stdCE-22680
+1479213341.310346,viewUpdate,Critical,Simon,CEList
+1479213345.869591,segue,DetailView,current,DetailView,Simon,SmallOverview
+1479213356.821718,segue,DetailView,Simon,MedicalCard,Simon,Button

@@ -1,0 +1,31 @@
+1479132744.847782,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479132744.902188,segue,unknown,,DetailView,current,Navigation
+1479132748.671091,segue,HeartRateGraph,Shun Long,CoreTempGraph,Shun Long,Button
+1479132754.315738,segue,unknown,,ParticipantOverview,,Navigation
+1479132768.598406,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479132768.644868,segue,unknown,,DetailView,current,Navigation
+1479132775.047376,segue,unknown,,ParticipantOverview,,Navigation
+1479132798.669665,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479132798.712524,segue,unknown,,DetailView,current,Navigation
+1479132801.685366,retreat,Shun Long
+1479132801.697421,viewUpdate,Retreat,Shun Long,CEList
+1479132812.217957,segue,unknown,,ParticipantOverview,,Navigation
+1479132813.946692,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479132813.99728,segue,unknown,,DetailView,current,Navigation
+1479132817.909158,segue,HeartRateGraph,Simon,HumidityGraph,Simon,Button
+1479132831.02862,segue,unknown,,ParticipantOverview,,Navigation
+1479132849.68285,segue,ParticipantOverview,,DetailView,Daniel,OverviewTable
+1479132849.730735,segue,unknown,,DetailView,current,Navigation
+1479132870.760509,segue,DetailView,Daniel,MedicalCard,Daniel,Button
+1479132877.66095,segue,unknown,,DetailView,current,Navigation
+1479132878.595196,segue,unknown,,ParticipantOverview,,Navigation
+1479132879.427892,segue,ParticipantOverview,,DetailView,Simon,OverviewTable
+1479132879.472808,segue,unknown,,DetailView,current,Navigation
+1479132881.261922,segue,DetailView,Simon,MedicalCard,Simon,Button
+1479132893.52153,segue,MedicalCard,current,DetailView,Shun Long,SmallOverview
+1479132893.04445,startScenarioBlock,stdCE-56705
+1479132893.553131,segue,unknown,,DetailView,current,Navigation
+1479132895.109856,viewUpdate,Critical,Shun Long,CEList
+1479132902.69658,segue,unknown,,ParticipantOverview,,Navigation
+1479132904.425955,segue,ParticipantOverview,,DetailView,Shun Long,OverviewTable
+1479132904.47267,segue,unknown,,DetailView,current,Navigation
